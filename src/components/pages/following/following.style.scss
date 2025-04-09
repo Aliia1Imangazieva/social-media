@@ -1,0 +1,196 @@
+.following-list-container {
+    width: 600px;
+    padding: 20px;
+    background: rgb(242, 244, 246);
+    font-family: Arial, sans-serif;
+    h2 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .following-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .following-item {
+        display: flex;
+        background-color: #fff;
+        align-items: center;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 0.3s;
+        cursor: pointer;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        &:hover {
+            background: #cbdcf7;
+        }
+
+        .following-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 12px;
+            object-fit: cover;
+            border: 2px solid #e1306c; // Розовая рамка, как у сторис в Instagram
+        }
+
+        .follower-info {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+    }
+    .no-followings {
+        text-align: center;
+        color: #777;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .user-card {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        width: 350px;
+        text-align: center;
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #e1306c;
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            font-size: 16px;
+            border: none;
+            background: #e1306c;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover {
+                background: #c12758;
+            }
+        }
+    }
+}
+@media (max-width: 932px) {
+    .following-list-container {
+      width: 100%;
+      padding: 15px;
+      margin-left: -70px;
+      h2 {
+        font-size: 20px;
+      }
+  
+      .following-list {
+        gap: 10px;
+      }
+  
+      .following-item {
+        padding: 5px;
+  
+        .following-avatar {
+          width: 45px;
+          height: 45px;
+          margin-right: 10px;
+        }
+  
+        .follower-info {
+          font-size: 16px;
+        }
+      }
+  
+      .no-followings {
+        font-size: 15px;
+      }
+  
+      .user-card {
+        width: 90%;
+        padding: 15px;
+  
+        img {
+          width: 80px;
+          height: 80px;
+        }
+  
+        h3 {
+          font-size: 18px;
+        }
+  
+        p {
+          font-size: 14px;
+        }
+  
+        button {
+          font-size: 14px;
+          padding: 7px 12px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .following-list-container {
+      padding: 10px;
+  
+      h2 {
+        font-size: 18px;
+      }
+  
+      .following-item {
+        flex-direction: row;
+        align-items: center;
+        padding: 5px;
+  
+        .following-avatar {
+          width: 40px;
+          height: 40px;
+        }
+  
+        .follower-info {
+          font-size: 15px;
+        }
+      }
+  
+      .user-card {
+        width: 95%;
+        padding: 10px;
+  
+        img {
+          width: 70px;
+          height: 70px;
+        }
+  
+        h3 {
+          font-size: 16px;
+        }
+  
+        p {
+          font-size: 13px;
+        }
+  
+        button {
+          font-size: 13px;
+          padding: 6px 10px;
+        }
+      }
+    }
+  }

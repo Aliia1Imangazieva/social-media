@@ -1,0 +1,22 @@
+.main-page{
+    flex-direction: column;
+    height: 100%;
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+    background-color: rgb(242, 244, 246);
+ .left{
+    position: fixed;
+   }
+ .right {
+   margin-left: 30%;
+  }
+}
+@media (max-width: 932px) {
+   .left {
+      display: none;
+   }
+   .main-page {
+      flex-direction: column;
+   }
+}

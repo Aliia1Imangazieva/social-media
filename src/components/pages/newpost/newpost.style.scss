@@ -1,0 +1,215 @@
+.new-post-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242, 244, 246);
+    margin-top:70px;
+    height: 100%;
+
+    .footer {
+        width: 100%;
+    }
+    .one-user-back-btn {
+        align-self: flex-start;
+        padding: 8px 15px;
+        background: none;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        color: #0095f6;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .post-box {
+        width: 460px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .post-header {
+            .title-input {
+                width: 94%;
+                padding: 12px;
+                font-size: 18px;
+                border: none;
+                border-bottom: 2px solid #dbdbdb;
+                outline: none;
+                transition: border-color 0.3s ease-in-out;
+
+                &:focus {
+                    border-bottom-color: #0095f6;
+                }
+            }
+        }
+
+        .post-description {
+            .desc-input {
+                width: 94%;
+                height: 100px;
+                resize: none;
+                padding: 12px;
+                font-size: 16px;
+                border: 1px solid #dbdbdb;
+                border-radius: 5px;
+                outline: none;
+                transition: border 0.3s ease-in-out;
+
+                &:focus {
+                    border-color: #0077ff;
+                }
+            }
+        }
+
+        .post-actions {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+
+            .post-action {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                background: none;
+                border: none;
+                font-size: 16px;
+                color: #0095f6;
+                cursor: pointer;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: #007acc;
+                }
+            }
+        }
+
+        .extra-input {
+            input {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #dbdbdb;
+                border-radius: 5px;
+                outline: none;
+                transition: border-color 0.3s ease-in-out;
+
+                &:focus {
+                    border-color: #0095f6;
+                }
+            }
+        }
+
+        .post-submit {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            background: #0077ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                background: #03609f;
+            }
+
+            &:disabled {
+                background: #b2dffc;
+                cursor: not-allowed;
+            }
+        }
+
+        
+    }
+}
+@media (max-width: 932px) {
+    .new-post-container {
+      //padding: 0 15px;
+      margin-top: 60px;
+      height: 100%;
+      .footer {
+        width: 100%;
+      }
+      
+      .one-user-back-btn {
+        font-size: 14px;
+        padding: 6px 12px;
+      }
+  
+      .post-box {
+        width: 100%;
+        padding: 20px;
+        gap: 10px;
+        margin-bottom: 96%;
+
+  
+        .post-header {
+          .title-input {
+            width: 90%;
+            font-size: 16px;
+            padding: 10px;
+          }
+        }
+  
+        .post-description {
+          .desc-input {
+            width: 90%;
+            height: 80px;
+            font-size: 14px;
+            padding: 10px;
+          }
+        }
+  
+        .post-actions {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+  
+          .post-action {
+            font-size: 14px;
+          }
+        }
+  
+        .extra-input {
+          input {
+            font-size: 14px;
+            padding: 8px;
+          }
+        }
+  
+        .post-submit {
+          font-size: 15px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .new-post-container {
+      .post-box {
+        padding: 12px;
+  
+        .post-header .title-input,
+        .post-description .desc-input,
+        .extra-input input {
+          font-size: 13px;
+        }
+  
+        .post-actions .post-action {
+          font-size: 13px;
+        }
+  
+        .post-submit {
+          font-size: 14px;
+          padding: 9px;
+        }
+      }
+    }
+  }

@@ -1,0 +1,67 @@
+.register-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+
+    .nav-app-icon {
+        width: 50px;
+        height: 50px;
+        margin-left:5px;
+        background-color:rgb(207, 220, 241) ;
+     }
+}
+
+.register-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.register-subtitle {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 22px;
+}
+
+.register-input {
+    width: 80%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.register-input:focus {
+    border-color: #007bff;
+    outline: none;
+    
+}
+
+.register-footer {
+    font-size: 14px;
+    color: #333;
+}
+
+.incitingText {
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 15px;
+}
+
+.incitingText:hover {
+    color: #0056b3;
+}
+.signup-footer{
+    font-size: 12px;
+}

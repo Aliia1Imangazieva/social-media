@@ -1,0 +1,21 @@
+.main-page{
+        flex-direction: column;
+        display: block;
+        margin-top: 60px;
+        justify-content: right;
+        background-color: rgb(242, 244, 246);
+        height: 100%;
+     .left{
+        position: fixed;
+        margin-right: 700px;
+        margin-top: 50px;
+    }
+}
+@media (max-width: 932px) {
+    .left {
+        display: none;
+    }
+    .main-page {
+        flex-direction: column;
+     }
+}

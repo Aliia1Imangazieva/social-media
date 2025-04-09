@@ -1,0 +1,152 @@
+    .feed-container {
+        margin: 30 auto;
+        flex-direction: column;
+        align-items: center;
+    
+        .feed-post {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            width: 500px;
+            overflow: hidden;
+            border: 1px solid #dbdbdb;
+    
+            .post-header {
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                border-bottom: 1px solid #dbdbdb;
+            }
+            
+            .author-info {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                cursor: pointer;
+            }
+            
+            .author-avatar {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 2px solid #e1306c;
+            }
+            
+            .author-name {
+                font-weight: bold;
+                font-size: 14px;
+            }
+            .post-title {
+                padding: 10px;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            
+            .post-description {
+                padding: 0 10px 10px;
+                font-size: 14px;
+                color: #333;
+                line-height: 1.4;
+            }
+            
+            .post-media {
+                width: 100%;
+                max-height: 500px;
+                object-fit: cover;
+                cursor: pointer;
+            }
+            .post-actions {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+            }
+            
+            .like-button {
+                font-size: 20px;
+                background: none;
+                border: none;
+                cursor: pointer;
+            }
+            
+            .delete-button {
+                background: none;
+                border: none;
+                cursor: pointer;
+                font-size: 18px;
+                color: red;
+            }
+        }
+    
+    }
+    .fullscreen-image {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+    }
+    
+    .fullscreen-image img {
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+    }
+    @media (max-width: 932px) {
+        .feed-container {
+            align-content: center;
+           
+
+            .feed-post {
+                width: 390px;
+                padding: 5px;
+                margin: 10px;
+                .post-title {
+                    font-size: 14px;
+                    padding: 8px;
+                }
+        
+                .post-description {
+                    font-size: 13px;
+                    padding: 0 8px 8px;
+                }
+        
+                .post-actions {
+                    flex-direction: column;
+                    align-items:flex-start;
+                    gap: 5px;
+                }
+        
+                .author-avatar {
+                    width: 32px;
+                    height: 32px;
+                }
+        
+                .author-name {
+                    font-size: 13px;
+                }
+        
+            }
+        }
+    
+        
+    }
+    
+    @media (max-width: 480px) {
+        .feed-post {
+            .post-title {
+                font-size: 13px;
+            }
+    
+            .post-description {
+                font-size: 12px;
+            }
+        }
+    
+    }
